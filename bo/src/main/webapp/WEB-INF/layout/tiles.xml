@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Layouts Start -->
+	<definition name="baseTile" template="/WEB-INF/pages/homelayout.jsp">
+		<put-attribute name="header" value="/WEB-INF/pages/header.jsp" />
+		<put-attribute name="left-aside" value="/WEB-INF/pages/left-aside.jsp" />
+		<put-attribute name="right-aside" value="/WEB-INF/pages/right-aside-empty.jsp" />
+	</definition>	
+	
+	<definition name="newsListTile" extends="baseTile">
+		<put-attribute name="body" value="/WEB-INF/pages/newsList.jsp" />
+	</definition>
+
+    <definition name="newsCRUDTile" extends="baseTile">
+        <put-attribute name="body" value="/WEB-INF/pages/newsCreateOrUpdate.jsp" />
+    </definition>
+
+
+</tiles-definitions>
