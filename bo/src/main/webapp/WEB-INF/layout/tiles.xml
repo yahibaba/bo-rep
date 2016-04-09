@@ -9,14 +9,23 @@
 		<put-attribute name="left-aside" value="/WEB-INF/pages/left-aside.jsp" />
 		<put-attribute name="right-aside" value="/WEB-INF/pages/right-aside-empty.jsp" />
 	</definition>	
-	
+
+    <!-- Start News tiles -->
 	<definition name="newsListTile" extends="baseTile">
 		<put-attribute name="body" value="/WEB-INF/pages/newsList.jsp" />
 	</definition>
-
     <definition name="newsCRUDTile" extends="baseTile">
         <put-attribute name="body" value="/WEB-INF/pages/newsCreateOrUpdate.jsp" />
     </definition>
+    <!-- End News tiles -->
 
+    <!-- Start PrayerTimes tiles -->
+    <definition name="prayerTimesListTile" extends="baseTile">
+        <put-attribute name="body" value="/WEB-INF/pages/prayerTimesList.jsp" />
+    </definition>
+    <definition name="prayerTimesCRUDTile" extends="baseTile">
+        <put-attribute name="body" value="/WEB-INF/pages/prayerTimesCreateOrUpdate.jsp" />
+    </definition>
+    <!-- End PrayerTimes tiles -->
 
 </tiles-definitions>
